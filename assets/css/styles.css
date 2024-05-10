@@ -1,0 +1,182 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the body takes up at least the full height of the viewport */
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #1a2a83d3;
+    color: #fff;
+}
+
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    margin: 2% 0;
+    font-size: 250%;
+}
+
+
+main {
+    display: flex;
+    flex: 1;
+    /* Allow the main content to grow to fill the remaining space */
+    max-width: 1200px;
+    margin: 2% auto;
+}
+
+article p {
+    margin: 2% 0;
+    font-size: 110%;
+}
+
+
+form {
+    max-width: 400px;
+}
+
+form h3 {
+    font-size: 150%;
+}
+
+form p {
+    margin: 3% 0;
+}
+
+label {
+    display: block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Add some spacing between form elements */
+}
+
+button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    /* Center the button horizontally */
+    padding: 1% 2%;
+    color: #fff;
+    background-color: #1a2a83d3;
+    border: none;
+    cursor: pointer;
+}
+
+
+.text-input {
+    width: 100%;
+    max-width: 100%;
+}
+
+.text-input,
+select {
+    padding: 1%;
+    outline: none;
+    border: 1.2px solid #b9C6ae;
+}
+
+.text-input:hover,
+.checkbox:hover,
+select:hover,
+button:hover {
+    box-shadow: 0 0 5px #999;
+}
+
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+
+.flex-row select {
+    flex: 1 0 0;
+    margin-left: 2%;
+}
+
+.flex-row input {
+    margin-right: 2%;
+}
+
+/* The font style of the adjacent element changes when the given element is checked */
+.checkbox:checked+label {
+    color: #999999;
+    font-style: italic;
+}
+
+/* When checked, the adjacent element has text insert at the end */
+.checkbox:checked+label::after {
+    margin-left: 10px;
+    font-size: 90%;
+    content: "(So you like the dark)";
+}
+
+footer {
+    footer {
+        flex-shrink: 0;
+        /* Prevent the footer from shrinking */
+        margin-top: auto;
+        /* Push the footer to the bottom of the viewport */
+    }
+
+    padding: 2%;
+    background-color: #1a2a83d3;
+    color: #fff;
+}
+
+
+/* Dark mode specific styles for elements */
+.dark-mode header,
+.dark-mode footer {
+    background-color: #222;
+    /* Dark mode header and footer background color */
+    color: #ccc;
+    /* Dark mode header and footer font color */
+}
+
+.dark-mode nav ul li a {
+    color: #ccc;
+    /* Dark mode nav link font color */
+}
+
+.dark-mode body {
+    background-color: #ccc;
+    /* Dark mode background color */
+    color: #ccc;
+    /* Dark mode font color */
+}
+
+.dark-mode .toggle span {
+    color: #ccc;
+    /* Dark mode toggle text color */
+}
+
+.dark-mode .toggle .slider {
+    background-color: #ccc;
+    /* Dark mode toggle slider color */
+}
+
+.dark-mode .back-link {
+    color: #ccc;
+    /* Dark mode back link color */
+}
+
+.dark-mode .portfolio {
+    color: #ccc
+}
+
+@media screen and (max-width: 1920px),
+(max-height: 1080px) {
+    header {
+        flex-direction: column;
+    }
+
+
+}

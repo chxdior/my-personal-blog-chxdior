@@ -1,0 +1,13 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff; /* Default background color */
+    color: #333; /* Default font color */
+}
+
+
+.author {
+    border-bottom: 1px solid #d8a47f;
+}
+
